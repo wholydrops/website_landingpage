@@ -422,7 +422,7 @@ main {
 	align-self: center;
 	justify-self: center;
 	grid-area: title;
-	font-size: clamp(3rem, 24vw, 17rem);
+	font-size: clamp(3rem, 24vw, 12rem);
 	font-family: kudryashev-d-excontrast-sans, sans-serif;
 	font-weight: 300;
 	margin: 0;
@@ -476,7 +476,7 @@ main {
 .preview__back {
 	cursor: pointer;
 	position: absolute;
-	bottom: 2.5rem;
+	bottom: 5rem;
 	left: 50%;
 	z-index: 300;
 	opacity: 0;

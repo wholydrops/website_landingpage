@@ -413,7 +413,7 @@ main {
   margin: 0;
   padding-top: 1vw;
   font-family: kudryashev-d-excontrast-sans, sans-serif;
-  font-size: clamp(3rem, 24vw, 17rem);
+  font-size: clamp(3rem, 24vw, 12rem);
   font-weight: 300;
   line-height: 1;
 }
@@ -467,7 +467,7 @@ main {
   pointer-events: none;
   will-change: transform, opacity;
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 5rem;
   left: 50%;
   transform: translateX(-50%);
 }
