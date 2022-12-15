@@ -209,11 +209,15 @@ main {
 }
 
 .frame__title-main {
+	font-size: 1.75rem;
+	margin: 0;
+	font-weight: 300;
+}
+.frame__title-subheading {
 	font-size: 0.75rem;
 	margin: 0;
 	font-weight: 300;
 }
-
 .frame__title-back {
 	position: relative;
 	display: flex;
