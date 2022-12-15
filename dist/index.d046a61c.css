@@ -199,14 +199,17 @@ main {
 
 .frame__title-main {
   margin: 0;
-  font-size: 1.75rem;
-  font-weight: 300;
+  padding-bottom: 10vh;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
 }
 
 .frame__title-subheading {
   margin: 0;
   padding-top: .75rem;
-  font-size: .75rem;
+  font-family: kudryashev-d-excontrast-sans, sans-serif;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 

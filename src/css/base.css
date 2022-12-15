@@ -209,15 +209,18 @@ main {
 }
 
 .frame__title-main {
-	font-size: 1.75rem;
+	font-size: 3rem;
 	margin: 0;
-	font-weight: 300;
+	font-weight: 400;
+	font-family: kudryashev-d-excontrast-sans, sans-serif;
+	padding-bottom: 10vh;
 }
 .frame__title-subheading {
-	font-size: 0.75rem;
+	font-size: 1.2rem;
 	margin: 0;
 	font-weight: 300;
 	padding-top: 0.75rem;
+	font-family: kudryashev-d-excontrast-sans, sans-serif;
 }
 .frame__title-back {
 	position: relative;
