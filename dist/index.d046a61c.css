@@ -467,7 +467,7 @@ main {
   pointer-events: none;
   will-change: transform, opacity;
   position: absolute;
-  bottom: 5rem;
+  bottom: 10vh;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -476,7 +476,7 @@ main {
 .preview__back {
 	cursor: pointer;
 	position: absolute;
-	bottom: 5rem;
+	bottom: 10vh;
 	left: 50%;
 	z-index: 300;
 	opacity: 0;
