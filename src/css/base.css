@@ -7,7 +7,7 @@
 :root {
 	font-size: 18px;
 	--color-text: #20221f;
-	--color-link: #000;
+	--color-link: #fff;
 	--color-bg: #b9b3af;
 	--color-bg-preview: #131312;
 	--color-bg-overlay: #131312;
@@ -44,7 +44,7 @@ body {
 
 .demo-3 {
 	--color-text: #efe5e5;
-	--color-link: #efe5e5;
+	--color-link: #fff;
     --color-text-inverted: #b3ac99;
     --color-bg: #42423e;
     --color-bg-overlay: #86412f;
@@ -81,6 +81,13 @@ body {
 
 }
 
+@keyframes glow{
+  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
+  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+}
+
+
+
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
@@ -93,6 +100,10 @@ a {
 	color: var(--color-link);
 	outline: none;
 	cursor: pointer;
+	animation-name:glow;
+  	animation-duration:1s;
+  	animation-iteration-count:infinite;
+  	animation-direction:alternate;
 }
 
 a:hover {
@@ -143,6 +154,9 @@ a:focus-visible {
 .oh__inner {
 	will-change: transform;
 	display: inline-block;
+	color: var(--color-title-preview);
+    font-weight: 500;
+	
 }
 
 .line {
@@ -213,7 +227,7 @@ main {
 	margin: 0;
 	font-weight: 400;
 	font-family: kudryashev-d-excontrast-sans, sans-serif;
-	padding-bottom: 10vh;
+	padding-bottom: 2vh;
 }
 .frame__title-subheading {
 	font-size: 1.2rem;
@@ -246,6 +260,10 @@ main {
 	flex-wrap: wrap;
 	justify-self: stretch;
 	gap: 1.5rem;
+	font-size: 1.75em;
+    font-family: kudryashev-d-excontrast-sans, sans-serif;
+    letter-spacing: 0.25rem;
+    text-decoration: blink;
 }
 
 .content {
@@ -281,6 +299,7 @@ main {
 	aspect-ratio: 0.75;
 	cursor: pointer;
 	will-change: transform;
+	border-radius: 2rem;
 }
 
 .demo-3 .preview__item .content__item-img-wrap {
@@ -311,6 +330,11 @@ main {
 
 .content__item-caption {
 	margin-top: 0.75rem;
+	color: var(--color-title-preview);
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
 }
 
 .content__overlay {
@@ -391,8 +415,8 @@ main {
 
 .demo-1 .preview__item-img-outer {
 	transform: rotate(45deg);
-	aspect-ratio: 0.7;
-	width: 33vw;
+	aspect-ratio: 0.54;
+	width: 27vw;
 }
 
 .demo-2 .preview__item-img-outer {
@@ -419,6 +443,7 @@ main {
 	width: 100%;
 	height: 100%;
 	will-change: transform;
+	border-radius: 4rem;
 }
 
 .preview__item-title {
@@ -432,6 +457,7 @@ main {
 	line-height: 1;
 	will-change: transform;
 	padding-top: 1vw;
+	
 }
 
 .preview__item-subtitle {
@@ -447,6 +473,7 @@ main {
 	justify-self: center;
 	position: relative;
 	grid-area: meta;
+	top: 5vh;
 }
 
 .preview__item-box {
@@ -470,6 +497,7 @@ main {
 	margin: 0;
 	font-weight: 400;
 	color: var(--color-title-preview);
+	font-size: 2em;
 }
 
 .preview__item-box-desc {
@@ -479,7 +507,7 @@ main {
 .preview__back {
 	cursor: pointer;
 	position: absolute;
-	bottom: 10vh;
+	top: 12vh;
 	left: 50%;
 	z-index: 300;
 	opacity: 0;
