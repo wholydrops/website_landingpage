@@ -45,11 +45,11 @@ body {
 .demo-3 {
 	--color-text: #efe5e5;
 	--color-link: #fff;
-    --color-text-inverted: #b3ac99;
-    --color-bg: #42423e;
-    --color-bg-overlay: #86412f;
-    --color-text-preview: #fffaea;
-    --color-title-preview: #eba089;
+	--color-text-inverted: #b3ac99;
+	--color-bg: #42423e;
+	--color-bg-overlay: #86412f;
+	--color-text-preview: #fffaea;
+	--color-title-preview: #eba089;
 }
 
 /* Page Loader */
@@ -81,9 +81,14 @@ body {
 
 }
 
-@keyframes glow{
-  from{text-shadow:0px 0px 5px #fff,0px 0px 5px #614ad3;}
-  to{text-shadow:0px 0px 20px #fff,0px 0px 20px #614ad3;}
+@keyframes glow {
+	from {
+		text-shadow: 0px 0px 5px #fff, 0px 0px 5px #614ad3;
+	}
+
+	to {
+		text-shadow: 0px 0px 20px #fff, 0px 0px 20px #614ad3;
+	}
 }
 
 
@@ -91,7 +96,7 @@ body {
 @keyframes loaderAnim {
 	to {
 		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
+		transform: scale3d(0.5, 0.5, 1);
 	}
 }
 
@@ -100,10 +105,10 @@ a {
 	color: var(--color-link);
 	outline: none;
 	cursor: pointer;
-	animation-name:glow;
-  	animation-duration:1s;
-  	animation-iteration-count:infinite;
-  	animation-direction:alternate;
+	animation-name: glow;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 a:hover {
@@ -155,14 +160,15 @@ a:focus-visible {
 	will-change: transform;
 	display: inline-block;
 	color: var(--color-title-preview);
-    font-weight: 500;
-	
+	font-weight: 500;
+
 }
+
 .logo-mainsite {
 	height: 18vh;
 	position: absolute;
-    right: 3vh;
-    top: 3vh;
+	right: 3vh;
+	top: 3vh;
 }
 
 .line {
@@ -235,6 +241,7 @@ main {
 	font-family: kudryashev-d-excontrast-sans, sans-serif;
 	padding-bottom: 1vh;
 }
+
 .frame__title-subheading {
 	font-size: 1.2rem;
 	margin: 0;
@@ -242,6 +249,7 @@ main {
 	padding-top: 1vh;
 	font-family: kudryashev-d-excontrast-sans, sans-serif;
 }
+
 .frame__title-back {
 	position: relative;
 	display: flex;
@@ -267,9 +275,9 @@ main {
 	justify-self: stretch;
 	gap: 1.25rem;
 	font-size: 1.15em;
-    font-family: kudryashev-d-excontrast-sans, sans-serif;
-    letter-spacing: 0.2rem;
-    text-decoration: blink;
+	font-family: kudryashev-d-excontrast-sans, sans-serif;
+	letter-spacing: 0.2rem;
+	text-decoration: blink;
 }
 
 .content {
@@ -337,10 +345,10 @@ main {
 .content__item-caption {
 	margin-top: 0.75rem;
 	color: var(--color-title-preview);
-    font-size: 1.2em;
-    text-align: center;
-    font-weight: 300;
-    font-style: italic;
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
 }
 
 .content__overlay {
@@ -463,7 +471,7 @@ main {
 	line-height: 1;
 	will-change: transform;
 	padding-top: 1vw;
-	
+
 }
 
 .preview__item-subtitle {
@@ -534,13 +542,31 @@ main {
 	transition: stroke .3s;
 }
 
+@media only screen and (max-width: 600px) {
+	.logo-mainsite {
+		display: none;
+	}
+
+	.demo-1 .preview__item-img-outer {
+		aspect-ratio: .54;
+		width: 50vw;
+		transform: rotate(45deg);
+		opacity: 70%;
+	}
+	.preview__back {
+		top: 13vh;
+	}
+}
+
 @media screen and (min-width: 53em) {
 	body {
 		overflow: hidden;
 	}
+
 	main {
 		grid-template-rows: 100%;
 	}
+
 	.frame {
 		grid-area: 1 / 1 / -1 / -1;
 		height: 100vh;
@@ -550,6 +576,7 @@ main {
 		grid-template-rows: auto auto;
 		grid-template-areas: 'title prev sponsor' 'nav nav nav';
 	}
+
 	.content {
 		height: 100vh;
 		display: flex;
@@ -557,31 +584,39 @@ main {
 		align-content: center;
 		grid-area: 1 / 1 / -1 / -1;
 	}
+
 	.content__item {
 		height: 80vh;
 		width: 25%;
 	}
+
 	.preview__item {
 		padding-top: 0;
 		grid-template-columns: 30% 1fr 30%;
 		grid-template-rows: 1fr auto auto auto;
-		grid-template-areas:'title title title'
-						'box-left subtitle box-right'
-						'box-left meta box-right'
-						'box-left ... box-right';
+		grid-template-areas: 'title title title'
+			'box-left subtitle box-right'
+			'box-left meta box-right'
+			'box-left ... box-right';
 	}
+
 	.preview__item-title {
 		grid-row: 1 / span 4;
 	}
+
 	.preview__item-box--right {
 		justify-self: end;
 		text-align: right;
 	}
+
 	.preview__item-box--left {
 		justify-self: start;
 		text-align: left;
 	}
+
 	body #cdawrap {
 		justify-self: end;
 	}
+
+
 }

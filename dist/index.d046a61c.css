@@ -523,6 +523,23 @@ main {
   transition: stroke .3s;
 }
 
+@media only screen and (max-width: 600px) {
+  .logo-mainsite {
+    display: none;
+  }
+
+  .demo-1 .preview__item-img-outer {
+    aspect-ratio: .54;
+    width: 50vw;
+    opacity: .7;
+    transform: rotate(45deg);
+  }
+
+  .preview__back {
+    top: 13vh;
+  }
+}
+
 @media screen and (min-width: 53em) {
   body {
     overflow: hidden;
