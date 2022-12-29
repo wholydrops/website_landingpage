@@ -538,6 +538,10 @@ main {
   .preview__back {
     top: 13vh;
   }
+
+  .preview__item-meta {
+    top: 2vh;
+  }
 }
 
 @media screen and (min-width: 53em) {

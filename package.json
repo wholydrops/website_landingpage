@@ -25,6 +25,7 @@
     "imagesloaded": "^5.0.0"
   },
   "devDependencies": {
+    "@parcel/transformer-webmanifest": "^2.8.2",
     "parcel": "^2.7.0"
   }
 }
